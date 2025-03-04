@@ -1,0 +1,108 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(135deg, #ffdee9, #f5d0fe); /* Pinterest Barbie Era 💕 */
+}
+
+.container {
+    width: 450px;
+    padding: 30px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 40px #ff85b3; /* Pinterest Glow 💕 */
+    backdrop-filter: blur(30px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock-container, #stopwatch, #timerDisplay {
+    font-size: 3rem;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px #ff85b3; /* Soft Peach Glow 💕 */
+}
+
+.toggle-btn, .btn, .mode-toggle {
+    padding: 12px;
+    background: linear-gradient(90deg, #ff85b3, #ffb6c1); /* Barbie Buttons 💕 */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    box-shadow: 0 0 20px #ff85b3;
+}
+
+.toggle-btn:hover, .btn:hover, .mode-toggle:hover {
+    transform: scale(1.1);
+}
+
+.watermark {
+    font-size: 14px;
+    color: #c33b7a; /* Visible in Every Mode 💕 */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    opacity: 1;
+    animation: manifesting 3s infinite alternate;
+}
+
+@keyframes manifesting {
+    from {
+        text-shadow: 0 0 10px #ff85b3;
+    }
+    to {
+        text-shadow: 0 0 20px #ff1493;
+    }
+}
+
+.dark-mode {
+    background: linear-gradient(135deg, #120136, #1f0030); /* Galaxy Era 🌌💫 */
+    color: #d7d2d9; 
+}
+
+.dark-mode .container {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px #8973ec; 
+}
+
+.dark-mode .clock-container, .dark-mode #stopwatch, .dark-mode #timerDisplay {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px #7657e3; 
+    border: 2px solid #970e94; 
+}
+
+.dark-mode .toggle-btn, .dark-mode .btn, .dark-mode .mode-toggle {
+    background: linear-gradient(90deg, #ff22ff, #bc87d6); /* Galaxy Queen Buttons 🔥 */
+    box-shadow: 0 0 10px #9c65e0;
+}
+
+.dark-mode .watermark {
+    color: #933e9a; 
+    animation: galaxyManifesting 3s infinite alternate; 
+}
+
+@keyframes galaxyManifesting {
+    from {
+        text-shadow: 0 0 20px #ff44cc;
+    }
+    to {
+        text-shadow: 0 0 40px #ff1493;
+    }
+}
+
+
