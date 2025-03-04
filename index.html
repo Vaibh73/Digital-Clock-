@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Digital Clock 💕✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="clock-container" id="clock">00:00:00</div>
+
+    <button class="toggle-btn" onclick="toggleFormat()">12H / 24H</button>
+
+    <div class="stopwatch">
+        <div id="stopwatch">00:00:00</div>
+        <button class="btn" onclick="startStopwatch()">Start</button>
+        <button class="btn" onclick="stopStopwatch()">Stop</button>
+        <button class="btn" onclick="resetStopwatch()">Reset</button>
+    </div>
+
+    <div class="timer">
+        <input type="number" id="timerInput" placeholder="Set Timer in Seconds">
+        <button class="btn" onclick="startTimer()">Start Timer</button>
+        <div id="timerDisplay">00:00:00</div>
+    </div>
+
+    <button class="mode-toggle" onclick="toggleMode()">Light / Dark Mode</button>
+
+    <div class="watermark">Designed & Developed by Vaibhavi Patil 💕</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
